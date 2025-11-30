@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gerze Teknik - Taşımayla Bilgisayar Bakım & Tamir</title>
+
+  <!-- SEO meta -->
+  <meta name="description" content="Gerze Teknik - Türkiye geneli kargo ile laptop/pc bakım, SSD yükseltme ve garantiyle onarım. Aynı gün teslim (yerel). Hızlı, güvenilir ve belgeli teknisyen."/>
+  <meta name="keywords" content="Bilgisayar tamiri, laptop bakım, SSD takma, Gerze, kargo ile tamir, format, bilgisayar hızlandırma" />
+  <meta name="author" content="Gerze Teknik" />
+
+  <!-- OpenGraph for link previews -->
+  <meta property="og:title" content="Gerze Teknik - Kargo ile Bilgisayar Bakım & Tamir" />
+  <meta property="og:description" content="Türkiye geneli kargo ile laptop/pc bakım, SSD yükseltme, garantili onarım." />
+  <meta property="og:image" content="placeholder-image.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Simple styles -->
+  <style>
+    :root{
+      --accent:#0b5ed7;
+      --dark:#0f1723;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --bg:#f7fafc;
+      --maxw:1080px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--bg);
+      color:var(--dark);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+    }
+    .wrap{max-width:var(--maxw);margin:24px auto;padding:20px;}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{
+      width:64px;height:64px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#06b6d4);
+      display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px;
+      box-shadow:0 6px 18px rgba(11,94,215,0.15);
+    }
+    h1{margin:0 0 6px;font-size:1.6rem}
+    p.lead{margin:0;color:var(--muted)}
+    .hero{display:flex;gap:24px;align-items:center;margin:18px 0 28px;flex-wrap:wrap}
+    .hero .card{flex:1;min-width:260px;background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.06)}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-ghost{border:1px solid #e6e9ef;color:var(--dark);background:transparent}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+    .service{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 16px rgba(2,6,23,0.04)}
+    .service h3{margin:0 0 8px;font-size:1rem}
+    .price{font-weight:700;color:var(--accent)}
+    .pack{display:flex;justify-content:space-between;align-items:center;padding:12px;border-radius:8px;background:#fbfdff;margin-top:10px}
+
+    .section{margin-top:26px}
+    footer{margin-top:36px;padding:14px;color:var(--muted);font-size:0.9rem;text-align:center}
+
+    /* responsive */
+    @media (max-width:900px){
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:640px){
+      .grid{grid-template-columns:1fr}
+      header{flex-direction:column;align-items:flex-start}
+      .hero{flex-direction:column}
+    }
+
+    /* contact card */
+    .contact{display:flex;flex-direction:column;gap:8px}
+    label{font-size:0.85rem;color:var(--muted)}
+    input, textarea, select{
+      padding:10px;border:1px solid #e6e9ef;border-radius:8px;font-size:0.95rem
+    }
+    textarea{min-height:100px;resize:vertical}
+    .note{font-size:0.85rem;color:var(--muted)}
+    .small{font-size:0.85rem;color:var(--muted)}
+    .features{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .chip{background:#f1f5f9;padding:8px 10px;border-radius:999px;font-size:0.9rem;color:var(--muted)}
+    .trust{display:flex;gap:12px;align-items:center;margin-top:10px}
+    .trust img{width:48px;height:48px;border-radius:8px;object-fit:cover}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">GT</div>
+      <div>
+        <h1>Gerze Teknik</h1>
+        <p class="lead">Kargo ile Türkiye geneli laptop & PC bakım, SSD yükseltme ve garantili onarım. Hızlı teslim & fotoğraf kanıtı.</p>
+      </div>
+      <div style="margin-left:auto;text-align:right">
+        <div class="small">WhatsApp: <strong id="phoneText">05xx xxx xx xx</strong></div>
+        <div class="small">E-posta: <strong id="emailText">mail@ornek.com</strong></div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h2>Taşımayla Tamir & Hızlandırma</h2>
+        <p class="note">Laptopunuzu kargoya verin; biz temizleyip, termal uygulayıp, gereken parçayı takıp fotoğrafla size teslim ederiz. İşlem sonrası 7 gün işçilik garantisi.</p>
+
+        <div class="features">
+          <div class="chip">Kargo ile Türkiye</div>
+          <div class="chip">7 gün işçilik garantisi</div>
+          <div class="chip">Ön/son fotoğraf</div>
+          <div class="chip">WhatsApp destek</div>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#" id="waBtn">WhatsApp ile Hızlı Başla</a>
+          <a class="btn btn-ghost" href="#hizmetler">Hizmetler & Fiyatlar</a>
+        </div>
+
+        <div style="margin-top:12px" class="small">Kopyala yapıştır kargo notu: <em>"Gerze Teknik - Kargo ile bakım (ad soyad, tel: 05xx...)"</em></div>
+      </div>
+
+      <div class="card contact" style="min-width:320px;max-width:420px;">
+        <h3>Hızlı Teklif Al</h3>
+        <form id="contactForm" onsubmit="return sendForm(event)">
+          <label>Ad Soyad</label>
+          <input id="name" required />
+          <label>Telefon (WhatsApp)</label>
+          <input id="phone" required placeholder="05xx xxx xx xx" />
+          <label>E-posta</label>
+          <input id="email" type="email" />
+          <label>Hizmet</label>
+          <select id="service">
+            <option>Seçiniz</option>
+            <option>Taşımayla Laptop Bakım (Temizlik+termal)</option>
+            <option>SSD Yükseltme + Kurulum</option>
+            <option>Format + Windows + Driver</option>
+            <option>Bilgisayar Toplama (Custom PC)</option>
+            <option>Diğer / Teklif İstiyorum</option>
+          </select>
+
+          <label>Mesaj / Seri No (isteğe bağlı)</label>
+          <textarea id="message" placeholder="Kısa açıklama veya laptop seri no"></textarea>
+
+          <div style="display:flex;gap:10px;margin-top:10px">
+            <button class="btn btn-primary" type="submit">Teklif Gönder</button>
+            <a class="btn" id="mailtoBtn" href="#" style="border:1px solid #e6e9ef">Email Gönder</a>
+          </div>
+
+          <div class="small" style="margin-top:8px">Formu gönderdiğinizde size WhatsApp üzerinden dönüş yapılacaktır. Form verisi formspree / mailto ile gönderilir.</div>
+        </form>
+      </div>
+    </section>
+
+    <section id="hizmetler" class="section">
+      <h2>Hizmetlerimiz & Fiyat Paketleri</h2>
+      <p class="small">Aşağıdaki paketler örnektir. Parça gereksinimi olduğunda fiyat parça + işçilik şeklinde hesaplanır.</p>
+
+      <div class="grid" style="margin-top:12px">
+        <div class="service">
+          <h3>Taşımayla Laptop Bakım</h3>
+          <div>Temizlik, fan + heatsink temizlik, termal macun yenileme, test</div>
+          <div class="pack">
+            <div>Standart Paket</div>
+            <div class="price">349₺ (kargo hariç)</div>
+          </div>
+          <div class="pack">
+            <div>Kargo Dahil Paket (81 il)</div>
+            <div class="price">459₺ (gidiş-dönüş)</div>
+          </div>
+        </div>
+
+        <div class="service">
+          <h3>SSD Yükseltme & Hızlandırma</h3>
+          <div>SSD montajı, klonlama veya temiz kurulum, performans testi</div>
+          <div class="pack"><div>İşçilik</div><div class="price">250₺</div></div>
+          <div class="pack"><div>SSD + montaj (256GB)</div><div class="price">~1.499₺ (SSD dahil)</div></div>
+        </div>
+
+        <div class="service">
+          <h3>Format & Windows Kurulum</h3>
+          <div>Windows 10/11 kurulumu, driver kurulumu, temel yazılım</div>
+          <div class="pack"><div>Hızlı Kurulum</div><div class="price">300₺</div></div>
+          <div class="pack"><div>Yedekleme + Kurulum</div><div class="price">450₺</div></div>
+        </div>
+
+        <div class="service">
+          <h3>Veri Yedekleme & Kurtarma (Basit)</h3>
+          <div>Harici disk yedekleme, basit dosya kurtarma</div>
+          <div class="pack"><div>Yedekleme</div><div class="price">200₺</div></div>
+          <div class="pack"><div>Basit Kurtarma</div><div class="price">350₺</div></div>
+        </div>
+
+        <div class="service">
+          <h3>Custom PC Toplama</h3>
+          <div>Parça seçimi, montaj, test, garanti</div>
+          <div class="pack"><div>Montaj + Test</div><div class="price">400₺</div></div>
+          <div class="pack"><div>Parça + Montaj</div><div class="price">Parça + %10 kar</div></div>
+        </div>
+
+        <div class="service">
+          <h3>Uzaktan Destek</h3>
+          <div>Anydesk / TeamViewer ile hızlı destek</div>
+          <div class="pack"><div>İlk 30 dk</div><div class="price">100₺</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Nasıl Gönderilir? (Kargo Talimatı)</h2>
+      <ol>
+        <li>Bilgisayarı kapatın, pili çıkabiliyorsa çıkarın. (Laptoplarda mümkünse)</li>
+        <li>Güvenli kutu ve bol köpükle sarın. (Kayıt için fotoğraf atın)</li>
+        <li>Kargo notuna: "Gerze Teknik - Ad Soyad - Tel: 05xx..." yazın.</li>
+        <li>Kargo bize ulaştıktan sonra WhatsApp üzerinden durum bildirimi yapılır.</li>
+        <li>İşlem bitince ön/son fotoğraf + test videoları gönderilir, onayınızla iade edilir.</li>
+      </ol>
+      <div class="small">Kargo anlaşması: Yurtiçi Kargo / MNG / Sürat ile çalışabilirsiniz — gönderi takip numarası alın.</div>
+    </section>
+
+    <section class="section">
+      <h2>Sık Sorulan Sorular (SSS)</h2>
+      <ul>
+        <li><strong>Garantiniz var mı?</strong> Evet, 7 gün işçilik garantisi veriyoruz. Parça garanti ise tedarikçiye bağlıdır.</li>
+        <li><strong>Ne kadar sürer?</strong> Genelde 2–5 iş günü (parça yoksa süre uzar). Kargo süresi ekstra.</li>
+        <li><strong>Ödeme?</strong> Kapıda ödeme (iade alıcıya) veya havale/eft ile ön ödeme kabul edilebilir.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> Gerze Teknik — İşyeri belgesi & kalfalık belgesi mevcut.</div>
+    </footer>
+  </div>
+
+  <script>
+    // ========== CONFIG - burayı kendi bilgilerinizle değiştirin ==========
+    const PHONE = "90XXXXXXXXXXX"; // e.g. 905xxxxxxxxx (ülke kodu +90 ile, rakamlar birleşik)
+    const PHONE_DISPLAY = "05xx xxx xx xx"; // site üzerinde gösterilecek format
+    const EMAIL = "mail@ornek.com";
+    const BUSINESS_NAME = "Gerze Teknik";
+    // ====================================================================
+    document.getElementById('waBtn').href = `https://wa.me/${PHONE}?text=${encodeURIComponent("Merhaba, taşımayla bakım için bilgi almak istiyorum. Adım: ")}`
+    document.getElementById('phoneText').textContent = PHONE_DISPLAY;
+    document.getElementById('emailText').textContent = EMAIL;
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('mailtoBtn').href = `mailto:${EMAIL}?subject=${encodeURIComponent(BUSINESS_NAME + " - Teklif İsteği")}`;
+
+    // Simple form -> opens WhatsApp with filled message (no backend required)
+    function sendForm(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const service = document.getElementById('service').value;
+      const message = document.getElementById('message').value.trim();
+
+      let text = `${BUSINESS_NAME} - Teklif Talebi\nAd: ${name}\nTel: ${phone}\nE-posta: ${email || '-'}\nHizmet: ${service}\nNot: ${message || '-'}`
+      // open whatsapp
+      const url = `https://wa.me/${PHONE}?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank');
+      return false;
+    }
+  </script>
+</body>
+</html>
